@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Solar System Animation */
+body {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sun {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.earth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 50%;
+  animation: earth-orbit 10s linear infinite;
+}
+
+.moon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  border-radius: 50%;
+  animation: moon-orbit 10s linear infinite;
+}
+.mars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  animation: mars-orbit 20s linear infinite;
+}
+.saturne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+  border-radius: 50%;
+  animation: saturne-orbit 30s linear infinite;
+}
+.titan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: lightgray;
+  border-radius: 50%;
+  animation: titan-orbit 5s linear infinite;
+}
+.io {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: lightblue;
+  border-radius: 50%;
+  animation: io-orbit 6s linear infinite;
+}
+
+@keyframes earth-orbit {
+  0% {
+    transform: rotate(0deg) translate(200px);
+  }
+  100% {
+    transform: rotate(360deg) translate(200px);
+  }
+}
+@keyframes moon-orbit {
+  0% {
+    transform: rotate(0deg) translate(50px);
+  }
+  100% {
+    transform: rotate(360deg) translate(50px);
+  }
+}
+@keyframes mars-orbit {
+  0% {
+    transform: rotate(0deg) translate(300px);
+  }
+  100% {
+    transform: rotate(360deg) translate(300px);
+  }
+}
+@keyframes saturne-orbit {
+  0% {
+    transform: rotate(0deg) translate(400px);
+  }
+  100% {
+    transform: rotate(360deg) translate(400px);
+  }
+}
+@keyframes titan-orbit {
+  0% {
+    transform: rotate(0deg) translate(100px);
+  }
+  100% {
+    transform: rotate(360deg) translate(100px);
+  }
+}
+@keyframes io-orbit {
+  0% {
+    transform: rotate(0deg) translate(200px);
+  }
+  100% {
+    transform: rotate(360deg) translate(200px);
+  }
+}
